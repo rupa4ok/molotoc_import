@@ -7,4 +7,6 @@
 *.iml
 out
 gen
-/app/src/Db.php
+/local/src/Db.php
+/bitrix/
+/local/vendor/

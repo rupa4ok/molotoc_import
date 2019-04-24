@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Src;
+namespace Src;
 
 use ParseCsv\Csv;
 

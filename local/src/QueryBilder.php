@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Src;
+namespace Src;
 
 class QueryBilder
 {
@@ -10,5 +10,4 @@ class QueryBilder
     {
         $this->db = new Db();
     }
-    
 }

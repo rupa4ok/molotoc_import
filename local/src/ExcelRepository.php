@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Src;
+namespace Src;
 
 class ExcelRepository
 {
@@ -22,13 +22,11 @@ class ExcelRepository
         foreach ($this->getLines() as $k => $item) {
             $url = $this->getId('URL раздела', $item);
             $id = $this->getId('Сопутствующие', $item, ';');
+            $i = 0;
             foreach ($id as $v => $value) {
                 if ($value) {
                     $releated = $this->getId($v, $id);
-                    $exelData[] = [
-                        'url' => $url[4],
-                        'url_releated' => $releated[4]
-                    ];
+                    $exelData[$url['4']][$v] = $releated[4];
                 }
             }
         }
