@@ -1,5 +1,5 @@
 {
-    "name": "import_to_bitrix",
+    "name": "rupa4ok/molotoc",
     "authors": [
         {
             "name": "rupa4ok",
@@ -8,8 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Src\\": "src/",
-            "Bitrix\\Main\\": "bitrix/"
+            "App\\Src\\": "app/src"
         }
     },
     "require": {
